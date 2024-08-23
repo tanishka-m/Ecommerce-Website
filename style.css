@@ -1,0 +1,348 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #eeee;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeee;
+  padding: 17px;
+  box-shadow: 0px 2px 2px 2px rgb(162, 162, 162);
+}
+
+nav .logo {
+  margin-left: 22px;
+  font-size: 24px;
+}
+
+ul {
+  margin-right: 45px;
+  margin-top: 7px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+ul li a {
+  margin-inline: 22px;
+  font-size: 20px;
+}
+
+ul li i {
+  font-size: 22px;
+}
+
+ul li #home {
+  color: #10cbbe;
+}
+
+ul li a:hover {
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+ul li i:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .mainText {
+  margin-top: 144px;
+}
+
+.mainText h1 {
+  font-size: 64px;
+  color: #10cbcb;
+}
+
+.mainText .top {
+  color: #10cbcb;
+}
+
+.mainText button {
+  width: 145px;
+  height: 40px;
+  background-color: #10cbcb;
+  border: none;
+  font-size: 22px;
+  color: white;
+  margin-top: 60px;
+}
+
+.mainText button:hover {
+  border: 2px solid #10cbcb;
+  background-color: transparent;
+  color: #10cbcb;
+  border-radius: 5px;
+}
+
+.trend .head {
+  text-align: center;
+  padding: 33px;
+  margin-top: 32px;
+}
+
+.head span {
+  color: #10cbcb;
+}
+
+/*Card CSS*/
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.cards .crd {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  margin-inline: 11px;
+}
+
+.cards img {
+  width: 257px;
+  padding: 22px;
+  border-radius: 30px;
+}
+
+.crdtext {
+  padding: 0px 33px 0 33px;
+}
+
+.crdtext button {
+  width: 100px;
+  height: 33px;
+  border-radius: 5px;
+  border: none;
+  background-color: #10cbcb;
+  color: white;
+  margin-top: 9px;
+}
+
+.crdtext button:hover {
+  background-color: transparent;
+  color: #10cbcb;
+  border: 2px solid #10cbcb;
+}
+
+.crdtext i {
+  color: #e4ac11;
+}
+
+.blog {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 310px;
+  background-color: #fff;
+  margin-inline: 22px;
+  border-radius: 11px;
+}
+
+.blog:hover {
+  transition: 0.6s ease;
+  width: 530px;
+  height: 340px;
+}
+
+.blogtext {
+  padding: 12px;
+  margin-top: 30px;
+}
+
+.blogtext a {
+  display: block;
+  width: 80px;
+  height: 20px;
+  background-color: #10cbcb;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 33px;
+}
+
+.blog img {
+  width: 300px;
+}
+
+.trends .head {
+  text-align: center;
+  padding: 33px;
+  margin-top: 32px;
+}
+
+/*letter box css*/
+.letter {
+  margin-top: 70px;
+  background-color: #04045d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+}
+
+.inp {
+  display: flex;
+}
+
+.inp input {
+  width: 330px;
+  height: 35px;
+  font-size: 18px;
+  border: none;
+  outline: none
+}
+
+.inp button {
+  width: 100px;
+  height: 35px;
+  background-color: #10cbcb;
+  color: white;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.footertext {
+  margin-inline: 85px;
+}
+
+/*about page css*/
+.about {
+  display: none;
+}
+
+.aboutus {
+  background-color: #04048b;
+  color: white;
+  padding: 45px;
+  font-size: 18px;
+}
+
+.me {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  background-color: #fff;
+  padding: 33px;
+  margin-left: 22%;
+  margin-top: 7%;
+}
+
+.me img {
+  width: 45%
+}
+
+/* Contact us page*/
+.contact{
+  display: none;
+}
+
+.contactus{
+  background-color: #04048b;
+  color: white;
+  padding: 45px;
+  font-size: 18px;
+}
+
+.contactme{
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin-top: 5%;
+  padding: 22px;
+  background-color: #fff;
+  margin-left: 11%;
+}
+
+.contactme iframe{
+  height: 300px;
+}
+
+.contactText{
+  padding: 20px;
+  width:600px;
+}
+
+.contactText p{
+  margin-top: 17px;
+}
+
+.form{
+  text-align: center;
+  margin-top: 6%;
+}
+.form input{
+  width: 400px;
+  height: 35px;
+  outline : none;
+  margin-top: 1%;
+}
+.form button{
+  width:300px;
+  height:36px;
+  background-color: #023636;
+  color:white;
+  font-size: 22px;
+  border: none;
+  margin: 15px;
+}
+
+/*cart css*/
+.cart{
+  display:flex;
+  justify-content: center;
+  display: none;
+}
+
+.cartText{
+  padding: 22px;
+  margin-top:22px;
+}
+
+.cartText p {
+  margin-top: 12px;
+}
+
+.cartText h2 {
+  margin-top: 11px;
+}
+
+.btn button{
+  width: 140px;
+  height:40px;
+  background-color: #dbdb06;
+  color:white;
+  border:none;
+  font-size:22px;
+  margin-inline:11px;
+  margin-top:22px;
+}
+
+.back{
+  width: 140px;
+  height:40px;
+  background-color: #0bb1b1;
+  color:white;
+  border:none;
+  font-size:22px;
+  margin-inline:11px;
+  margin-top:22px;
+}
+

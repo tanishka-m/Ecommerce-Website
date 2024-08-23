@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <h1>Trends</h1>
+      </div>
+      <ul>
+        <li>
+          <a id="home" onclick="homes()">Home</a>
+          <a id="shop" onclick="shops()">Shops</a>
+          <a id="blog" onclick="blog()">Blog</a>
+          <a id="about" onclick="abouts()">About</a>
+          <a id="contact" onclick="contact()">Contact</a>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- mainpage -->
+    <div class="main">
+      <div class="mainText">
+        <h2>Trends...</h2>
+        <h1 class="top">Super Value Deals</h1>
+        <h1 class="top">On All Products</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos!</p>
+        <button>Explore</button>
+      </div>
+      <img src="m3.png" alt="">
+    </div>
+
+    <!-- Men cards -->
+    <div class="trend">
+      <div class="head">
+        <h1>Trends <span>Men's Wear</span></h1>
+      </div>
+
+      <div class="cards">
+        <div class="crd">
+          <img src="srt1.webp" onclick="show(this)">
+          <div class="crdtext">
+            <h2>Cotton Trending Shirt</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="crd">
+          <img src="srt2.webp" onclick="show(this)">
+          <div class="crdtext">
+            <h2>Cotton Trending Shirt</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="crd">
+          <img src="srt6.webp" onclick="show(this)">
+          <div class="crdtext">
+            <h2>Cotton Trending Shirt</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Women cards -->
+    <div class="trend" id="trendSec">
+      <div class="head">
+        <h1>Trends <span>Women's Wear</span></h1>
+      </div>
+
+      <div class="cards">
+        <div class="crd">
+          <img src="wn4.webp" onclick="show(this)">
+          <div class="crdtext">
+            <h2>Trending Girl Tops</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="crd">
+          <img src="wn5.webp" onclick="show(this)">
+          <div class="crdtext">
+            <h2>Trending Girl Tops</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="crd">
+          <img src="wn6.webp" onclick="show(this)">
+          <div class="crdtext">
+            <h2>Trending Girl Tops</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i><br>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--cart-->
+    <div class="cart">
+      <img id="newImg" src="" alt="">
+      <div class="cartText">
+        <h1>Trends Offer : Trending Shop <br>
+          Now</h1>
+        <h2>Special Price</h2>
+        <h2>$11</h2>
+        <p>Nam libero tempore, cum soluta nobis est </p>
+        <p>Nam libero tempore, cum soluta nobis est </p>
+        <p>Nam libero tempore, cum soluta nobis est </p>
+        <div class="btn">
+          <button>Buy Now</button>
+          <button onclick="addedCart()">Add To Cart</button>
+        </div>
+        <button class="back">Back</button>
+      </div>
+    </div>
+
+    <!-- blogs -->
+    <div class="trends">
+      <div class="head">
+        <h1>Trends <span>Top Blog's</span></h1>
+      </div>
+
+      <div class="cards">
+        <div class="blog">
+          <img src="tr1.webp" alt="">
+          <div class="blogtext">
+            <h2>Trending Girls Cloth</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perferendis!</p>
+            <a href="https://www.bewakoof.com/blog/15-trending-spring-outfits-for-girls/">Read more</a>
+          </div>
+        </div>
+
+        <div class="blog">
+          <img src="tr3.webp" alt="">
+          <div class="blogtext">
+            <h2>Trending Boys Cloth</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perferendis!</p>
+            <a href="https://kidiezone.com/latest-fashion-trends-for-boys-street-fashion-for-kids/">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About us page-->
+    <div class="about">
+      <div class="aboutus">
+        <h1>#Know Us...</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt!</p>
+      </div>
+
+      <div class="me">
+        <img src="lap.png">
+        <div class="aboutme">
+          <h1>Who we are ?</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact us page-->
+    <div class="contact">
+      <div class="contactus">
+        <h1>#Let's Connect...</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt!</p>
+      </div>
+
+      <div class="contactme">
+        <div class="contactText">
+          <h1>Visit Our Office or Contact <br>
+            Us Today</h1>
+          <p>Address : Dablin Park, England, New York.</p>
+          <p>Contact : dumiemail@gmail.com</p>
+          <p>Number : 999999000011</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.371405880457!2d- 
+1.551208123927611!3d54.544577984399446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e9bb1e1a7cebb%3A0xca7b063adbd05d73!2sDublin%20St%2C%20Darlington%2C%20UK!5e0!3m2!1sen!2sin!4v1723460927081!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="form">
+        <h1>Connect with Us. Fill Form</h1>
+        <input type="text" placeholder="Enter Your FirstName"><br>
+        <input type="text" placeholder="Enter Your LastName"><br>
+        <input type="text" placeholder="Enter Your Email"><br>
+        <input type="text" placeholder="Enter Your Number"><br>
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <!-- Letter -->
+    <div class="letter">
+      <div class="lettertext">
+        <h1>Sign Up for NewsLetter</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab eius tempore, nihil nemo mollitia veniam .</p>
+      </div>
+
+      <div class="inp">
+        <input type="text" placeholder="Enter Email Address">
+        <button>Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footertext">
+        <h2>Trends</h2>
+
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Satisfaction</p>
+        <p></p>
+      </div>
+
+      <div class="footertext">
+        <h2>About US</h2>
+
+        <p>Address : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sequi nemo.</p>
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Satisfaction</p>
+      </div>
+
+      <div class="footertext">
+        <h2>Contect</h2>
+
+        <p>9962547781</p>
+        <p>Customer</p>
+        <p>Coming up..</p>
+        <p>New Arrival</p>
+      </div>
+
+      <div class="footertext">
+        <h2>Trending</h2>
+
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Shops</p>
+        <p></p>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="style.js"></script>
+</body>
+
+</html>
